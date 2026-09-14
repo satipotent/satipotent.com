@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reid Doctor</title>
+  <meta name="description" content="Reid Doctor — neuroscientist and general tinkerer.">
+  <meta property="og:title" content="Reid Doctor">
+  <meta property="og:description" content="Neuroscientist and general tinkerer.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://satipotent.com">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='3' fill='%237a2e2a'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f6f2ea;
+      --ink: #1a1814;
+      --muted: #6b6359;
+      --accent: #7a2e2a;
+      --rule: #d8d2c4;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14110d;
+        --ink: #ece6d8;
+        --muted: #8a8275;
+        --accent: #d68b86;
+        --rule: #2a2620;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    main {
+      max-width: 38rem;
+      margin: 0 auto;
+      padding: clamp(3rem, 12vh, 8rem) 1.5rem 4rem;
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: clamp(2.5rem, 7vw, 3.75rem);
+      font-variation-settings: 'opsz' 144;
+      line-height: 1.05;
+      letter-spacing: -0.015em;
+      margin: 0 0 1.25rem;
+    }
+
+    .intro {
+      font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+      line-height: 1.45;
+      font-weight: 300;
+      font-style: italic;
+      font-variation-settings: 'opsz' 72;
+      margin: 0 0 2.25rem;
+      color: var(--ink);
+    }
+
+    .rule {
+      width: 2.5rem;
+      height: 1px;
+      background: var(--rule);
+      border: none;
+      margin: 0 0 2.25rem;
+    }
+
+    .bio {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      margin: 0 0 2.75rem;
+    }
+
+    .contact {
+      font-size: 1rem;
+      color: var(--muted);
+      margin: 0 0 4rem;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in oklab, var(--accent) 35%, transparent);
+      transition: border-color 150ms ease;
+    }
+
+    .contact a:hover,
+    .contact a:focus-visible {
+      border-bottom-color: var(--accent);
+      outline: none;
+    }
+
+    .colophon {
+      font-size: 0.85rem;
+      line-height: 1.55;
+      color: var(--muted);
+      font-style: italic;
+      font-variation-settings: 'opsz' 9;
+      margin: 0;
+    }
+
+    .colophon .term {
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    ::selection {
+      background: color-mix(in oklab, var(--accent) 30%, transparent);
+      color: var(--ink);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Reid Doctor</h1>
+    <p class="intro">I'm a neuroscientist and general tinkerer who wants to improve the world.</p>
+    <hr class="rule">
+    <p class="bio">
+      I have Bachelor's degrees in Physics and Cognitive Science and am finishing my PhD in Neuroscience and Cognitive Science. My primary PhD work has been to build a one-of-a-kind microscope to image a previously-intractable sensorimotor circuit. I have many side projects ranging from radical bed designs to optimizing blackflame (actual light-absorbing flames appearing black) apparati to host the perfect goth dinner party, some of which will appear on this site. Feel free to reach out to ask a question or share something interesting of your own!
+    </p>
+    <p class="contact">
+      <a href="mailto:reid@satipotent.com">reid@satipotent.com</a>
+    </p>
+    <p class="colophon">
+      <span class="term">satipotent</span> — from Latin <em>satis</em> (enough) and <em>potens</em> (powerful): strong enough for the task at hand.
+    </p>
+  </main>
+</body>
+</html>
