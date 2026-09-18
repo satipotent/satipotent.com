@@ -5,32 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Reid Doctor</title>
   <meta name="description" content="Reid Doctor — neuroscientist and general tinkerer.">
+  <meta name="theme-color" content="#e2ebe1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121a16" media="(prefers-color-scheme: dark)">
   <meta property="og:title" content="Reid Doctor">
   <meta property="og:description" content="Neuroscientist and general tinkerer.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://satipotent.com">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='3' fill='%237a2e2a'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='3' fill='%231c4733'/%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg: #f6f2ea;
-      --ink: #1a1814;
-      --muted: #6b6359;
-      --accent: #7a2e2a;
-      --rule: #d8d2c4;
+      --bg: #e2ebe1;
+      --ink: #131a12;
+      --muted: #5d6b5c;
+      --accent: #1c4733;
+      --rule: #c3d0c2;
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #14110d;
-        --ink: #ece6d8;
-        --muted: #8a8275;
-        --accent: #d68b86;
-        --rule: #2a2620;
+        --bg: #121a16;
+        --ink: #dfe8e2;
+        --muted: #7d8a7e;
+        --accent: #7fc9a5;
+        --rule: #23302a;
       }
     }
 
@@ -41,9 +43,9 @@
       padding: 0;
       background: var(--bg);
       color: var(--ink);
-      font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+      font-family: 'Sora', system-ui, -apple-system, 'Segoe UI', sans-serif;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 17px;
       line-height: 1.55;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
@@ -57,19 +59,17 @@
 
     h1 {
       font-weight: 400;
-      font-size: clamp(2.5rem, 7vw, 3.75rem);
-      font-variation-settings: 'opsz' 144;
-      line-height: 1.05;
-      letter-spacing: -0.015em;
+      font-size: clamp(2.4rem, 6.5vw, 3.5rem);
+      line-height: 1.06;
+      letter-spacing: -0.03em;
       margin: 0 0 1.25rem;
     }
 
     .intro {
-      font-size: clamp(1.1rem, 2.2vw, 1.35rem);
-      line-height: 1.45;
+      font-size: clamp(1.05rem, 2.1vw, 1.25rem);
+      line-height: 1.5;
       font-weight: 300;
-      font-style: italic;
-      font-variation-settings: 'opsz' 72;
+      letter-spacing: -0.005em;
       margin: 0 0 2.25rem;
       color: var(--ink);
     }
@@ -83,13 +83,14 @@
     }
 
     .bio {
-      font-size: 1.0625rem;
-      line-height: 1.7;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.75;
       margin: 0 0 2.75rem;
     }
 
     .contact {
-      font-size: 1rem;
+      font-size: 0.95rem;
       color: var(--muted);
       margin: 0 0 4rem;
     }
@@ -97,6 +98,7 @@
     .contact a {
       color: var(--accent);
       text-decoration: none;
+      font-weight: 400;
       border-bottom: 1px solid color-mix(in oklab, var(--accent) 35%, transparent);
       transition: border-color 150ms ease;
     }
@@ -108,21 +110,24 @@
     }
 
     .colophon {
-      font-size: 0.85rem;
-      line-height: 1.55;
+      font-size: 0.8rem;
+      font-weight: 300;
+      line-height: 1.6;
       color: var(--muted);
-      font-style: italic;
-      font-variation-settings: 'opsz' 9;
       margin: 0;
     }
 
     .colophon .term {
-      font-style: normal;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .colophon .lat {
       font-weight: 400;
     }
 
     ::selection {
-      background: color-mix(in oklab, var(--accent) 30%, transparent);
+      background: color-mix(in oklab, var(--accent) 25%, transparent);
       color: var(--ink);
     }
   </style>
@@ -139,7 +144,7 @@
       <a href="mailto:reid@satipotent.com">reid@satipotent.com</a>
     </p>
     <p class="colophon">
-      <span class="term">satipotent</span> — from Latin <em>satis</em> (enough) and <em>potens</em> (powerful): strong enough for the task at hand.
+      <span class="term">satipotent</span> — from Latin <span class="lat">satis</span> (enough) and <span class="lat">potens</span> (powerful): strong enough for the task at hand.
     </p>
   </main>
 </body>
